@@ -1,0 +1,44 @@
+CREATE DATABASE temp1;
+
+create	database temp2;
+
+CREATE DATABASE Jaf;
+
+DROP DATABASE temp1;
+DROP DATABASE temp2;
+CREATE DATABASE college;
+USE college;
+CREATE TABLE student (
+ID INT  PRIMARY KEY,
+Name VARCHAR(50),
+Age INT NOT NULL
+);
+
+INSERT INTO student VALUES (1, "Jaffer", 26);
+INSERT INTO student VALUES (2, "Mahnoor", 27);
+INSERT INTO student VALUES (3, "Hoor Dhakan", 18);
+
+SELECT * FROM Student;
+
+CREATE DATABASE IF NOT EXISTS college;
+SHOW DATABASES;
+SHOW TABLES;
+DROP table college;
+
+USE jaf;
+Create table Student(
+ROLLNUM INT primary key,
+name varchar(50)
+);
+
+select * from student;
+insert	into student
+(ROLLNUM, name)
+values
+(104,"Jaffer"),
+(105,"Mahfer");
+select * from student;
+insert	into student
+values
+(106,"Hoor dhakan");
+select * from student
